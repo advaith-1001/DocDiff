@@ -107,3 +107,8 @@
     font-family: sans-serif;
     color: rgb(136, 135, 135);
 }
+
+.ai-summary {
+    line-height: 1.25   ;
+    color: black;
+}

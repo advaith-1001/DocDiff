@@ -48,7 +48,7 @@ const onDocumentLoadSuccess2 = ({ numPages }) => setNumPages2(numPages);
       <div className='result-container'>
         {/* Left preview */}
         <div className='preview-column'>
-          <h3>{file1.name}</h3>
+          <h3 className='file-name'>{file1.name}</h3>
           {highlightedFile1URL ? (
              <Document file={highlightedFile1URL} onLoadSuccess={onDocumentLoadSuccess1}>
       {Array.from(new Array(numPages1), (el, index) => (
@@ -70,7 +70,7 @@ const onDocumentLoadSuccess2 = ({ numPages }) => setNumPages2(numPages);
 
         {/* Right preview */}
         <div className='preview-column'>
-           <h3>{file2.name}</h3>
+           <h3 className='file-name'>{file2.name}</h3>
           {highlightedFile2URL ? (
 
              <Document file={highlightedFile2URL} onLoadSuccess={onDocumentLoadSuccess1}>
@@ -93,7 +93,7 @@ const onDocumentLoadSuccess2 = ({ numPages }) => setNumPages2(numPages);
 
         {/* Difference list */}
         <div className='diff-column'>
-          <h3>Changes</h3>
+          <h3 className='changes-header'>Changes</h3>
           <div className='diff-list'>
             <div className='ai-summary-ctr'>
               <h4 className='ai-summary-heading'>AI summary</h4>
